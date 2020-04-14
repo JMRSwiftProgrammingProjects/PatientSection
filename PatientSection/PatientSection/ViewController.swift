@@ -1,10 +1,11 @@
 //
 //  ViewController.swift
-//  PatientSection
-//
+//  Project: PatientSection
+//  Input: NONE
+//  Output:Patient name and whether they have a fever or not. 
 //  Created by Jocelyn M. Rodriguez on 4/14/20.
 //  Copyright © 2020 CUNY Borough of Manhattan Community College. All rights reserved.
-//
+
 
 import UIKit
 
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
     let patientTemp: Double = 99.8;
     
     if patientTemp >= 100.4 {
-      textView.text = ("You have a fever, \(patientName) Go to Section A. ")
+      textView.text = ("You have a fever, \(patientName). Go to Section A. ")
     }else{
       textView.text = ("You don't have a fever, \(patientName). Go to Section B. ")
     }

@@ -28,18 +28,18 @@ class ViewController: UIViewController {
                
                // the text color is black
                textView.textColor = .black
-               
-    }
-
+           
+        let patientName: String = "John";
+        let patientTemp: Double = 99.8;
     
-    let patientName: String = "John";
-    let patientTemp: Double = 99.8;
-    
-    if patientTemp >= 100.4 {
+      if patientTemp >= 100.4 {
       textView.text = ("You have a fever, \(patientName). Go to Section A. ")
-    }else{
+      }else{
       textView.text = ("You don't have a fever, \(patientName). Go to Section B. ")
-    }
+    }       
+        
+        
+    }   
     
 }
 

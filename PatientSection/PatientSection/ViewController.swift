@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Project: PatientSection
 //  Input: NONE
-//  Output:Patient name and whether they have a fever or not. 
+//  Output:Patient name and whether they have a fever or not.
 //  Created by Jocelyn M. Rodriguez on 4/14/20.
 //  Copyright © 2020 CUNY Borough of Manhattan Community College. All rights reserved.
 
@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
        
-        let textView = view as! UITextView
+        let textView: UITextView = view as! UITextView;
                
                // the screen is not editable
                textView.isEditable = false
@@ -33,13 +33,10 @@ class ViewController: UIViewController {
         let patientTemp: Double = 99.8;
     
       if patientTemp >= 100.4 {
-      textView.text = ("You have a fever, \(patientName). Go to Section A. ")
+      textView.text = ("\n \n \n \n \n \n \n \n\n \n \n \n You have a fever, \(patientName). Go to Section A. ")
       }else{
-      textView.text = ("You don't have a fever, \(patientName). Go to Section B. ")
-    }       
+      textView.text = ("\n \n \n \n \n \n \n \n\n \n \n \n You don't have a fever, \(patientName). Go to Section B. ")
+    }
         
         
-    }   
-    
-}
-
+    }
